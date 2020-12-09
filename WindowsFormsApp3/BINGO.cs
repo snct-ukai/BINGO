@@ -46,7 +46,7 @@ namespace WindowsFormsApp3
             label1.Text += "   ";
             i++;
             l++;
-            if (l == 28)
+            if (l == 14)
             {
                 label1.Text += '\n';
                 label1.Text += '\n';
