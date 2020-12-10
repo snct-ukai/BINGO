@@ -64,9 +64,9 @@ namespace WindowsFormsApp3
 
         private void BINGO_Load(object sender, EventArgs e)
         {
-            /*this.TopMost = true;
+            this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;*/
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -96,17 +96,17 @@ namespace WindowsFormsApp3
         private void button6_Click(object sender, EventArgs e)
         {
             label1.Font = new Font(label1.Font.FontFamily, fontsize);
-            label2.Font = new Font(label1.Font.FontFamily, (fontsize/46)*52);
-            label3.Font = new Font(label1.Font.FontFamily, (fontsize/46)*16);
-            label4.Font = new Font(label1.Font.FontFamily, (fontsize/46)*28);
+            label2.Font = new Font(label1.Font.FontFamily, fontsize*52/46);
+            label3.Font = new Font(label1.Font.FontFamily, fontsize*16/46);
+            label4.Font = new Font(label1.Font.FontFamily, fontsize*28/46);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            label1.Font = new Font(label1.Font.FontFamily, (fontsize*1280)/1920);
-            label2.Font = new Font(label1.Font.FontFamily, (fontsize / 46) * 52*1280/1920);
-            label3.Font = new Font(label1.Font.FontFamily, (fontsize / 46) * 16*1280/1920);
-            label4.Font = new Font(label1.Font.FontFamily, (fontsize / 46) * 28*1280/1920);
+            label1.Font = new Font(label1.Font.FontFamily, fontsize*1280/1920);
+            label2.Font = new Font(label1.Font.FontFamily, fontsize * 52/ 46 *1280/1920);
+            label3.Font = new Font(label1.Font.FontFamily, fontsize * 16/ 46 *1280/1920);
+            label4.Font = new Font(label1.Font.FontFamily, fontsize * 28/ 46 *1280/1920);
         }
     }
 }
