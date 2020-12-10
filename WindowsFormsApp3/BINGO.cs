@@ -16,8 +16,7 @@ namespace WindowsFormsApp3
         const int bingo = 75;
         int[] s = new int[bingo];
         int i = 0;
-        int l = 0;
-        const int line = 14;
+        int h = 0;
         public BINGO()
         {
             InitializeComponent();
@@ -45,22 +44,43 @@ namespace WindowsFormsApp3
             } while (n);
             s[i] = num;
             label1.Text += (s[i].ToString());
-            label1.Text += "   ";
+            label1.Text += "    ";
             i++;
-            l++;
-            if (l == line)
-            {
-                label1.Text += '\n';
-                label1.Text += '\n';
-                l = 0;
-            }
             label2.Text = (i.ToString());
             label2.Text += "個目";
+            label3.Text = "残り";
+            label3.Text += ((bingo - i).ToString());
         }
 
         private void BINGO_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            h++;
+            label4.Text = (h.ToString());
+            label4.Text += "人";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            h--;
+            label4.Text = (h.ToString());
+            label4.Text += "人";
         }
     }
 }
