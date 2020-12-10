@@ -13,16 +13,18 @@ namespace WindowsFormsApp3
     public partial class BINGO : Form
     {
         Random rnd = new System.Random();
-        int[] s = new int[100];
+        const int bingo = 75;
+        int[] s = new int[bingo];
         int i = 0;
         int l = 0;
+        const int line = 14;
         public BINGO()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (i > 74)
+            if (i > (bingo - 1))
             {
                 Environment.Exit(0);
             }
@@ -30,7 +32,7 @@ namespace WindowsFormsApp3
             bool n = false;
             do
             {
-                int r = rnd.Next(1, 76);
+                int r = rnd.Next(1, (bingo+1));
                 n = false;
                 for (int j = 0; j < i + 1; j++)
                 {
@@ -46,7 +48,7 @@ namespace WindowsFormsApp3
             label1.Text += "   ";
             i++;
             l++;
-            if (l == 14)
+            if (l == line)
             {
                 label1.Text += '\n';
                 label1.Text += '\n';
