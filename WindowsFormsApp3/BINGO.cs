@@ -14,6 +14,14 @@ namespace WindowsFormsApp3
 {
     public partial class BINGO : Form
     {
+        /*
+        label1.Fontsize=46
+        label2.Fontsize=52
+        label3.Fontsize=16
+        label4.Fontsize=28
+        */
+        const int fontsize = 46;
+
         Random rnd = new System.Random();
         const int bingo = 75;
         int[] s = new int[bingo];
@@ -56,9 +64,9 @@ namespace WindowsFormsApp3
 
         private void BINGO_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
+            /*this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;*/
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -83,6 +91,22 @@ namespace WindowsFormsApp3
             h--;
             label4.Text = (h.ToString());
             label4.Text += "人";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label1.Font = new Font(label1.Font.FontFamily, fontsize);
+            label2.Font = new Font(label1.Font.FontFamily, (fontsize/46)*52);
+            label3.Font = new Font(label1.Font.FontFamily, (fontsize/46)*16);
+            label4.Font = new Font(label1.Font.FontFamily, (fontsize/46)*28);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            label1.Font = new Font(label1.Font.FontFamily, (fontsize*1280)/1920);
+            label2.Font = new Font(label1.Font.FontFamily, (fontsize / 46) * 52*1280/1920);
+            label3.Font = new Font(label1.Font.FontFamily, (fontsize / 46) * 16*1280/1920);
+            label4.Font = new Font(label1.Font.FontFamily, (fontsize / 46) * 28*1280/1920);
         }
     }
 }
