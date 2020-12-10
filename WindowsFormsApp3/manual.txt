@@ -27,3 +27,6 @@ BINGO.csの16行目、const int bingoの値を変えることにより最大値�
 https://github.com/snct-ukai/WindowsFormsApp3
 
 Copyright 2020 Ukai All Rights Reserved. 
+
+
+2020/12/11:FHDモードとHDモードを追加
