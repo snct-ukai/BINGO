@@ -71,7 +71,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-B", 52F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(347, 15);
+            this.label2.Location = new System.Drawing.Point(347, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(364, 67);
             this.label2.TabIndex = 2;
@@ -115,7 +115,6 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(205, 81);
             this.label4.TabIndex = 6;
-            this.label4.Text = "0人";
             // 
             // button4
             // 
@@ -181,7 +180,7 @@
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BINGO";
-            this.Text = "BINGO";
+            this.Text = "番号ガラガラ";
             this.Load += new System.EventHandler(this.BINGO_Load);
             this.ResumeLayout(false);
 

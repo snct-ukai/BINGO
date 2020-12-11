@@ -33,6 +33,10 @@ namespace WindowsFormsApp3
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            if (i == 0)
+            {
+                label4.Text = "0人";
+            }
             if (i > (bingo - 1))
             {
                 Environment.Exit(0);
