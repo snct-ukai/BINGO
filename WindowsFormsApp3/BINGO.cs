@@ -1,13 +1,5 @@
-﻿//Copyright 2020 Ukai All Rights Reserved.
-
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp3
@@ -21,12 +13,17 @@ namespace WindowsFormsApp3
         label3.Fontsize=16
         label4.Fontsize=28
         */
+        //フォントサイズ
         const int fontsize = 46;
 
         Random rnd = new System.Random();
+        //bingoの最大値
         const int bingo = 75;
+        //生成された乱数を格納する配列の宣言
         int[] s = new int[bingo];
+        //乱数の個数
         int i = 0;
+        //bingoした人
         int h = 0;
         public BINGO()
         {
@@ -74,20 +71,21 @@ namespace WindowsFormsApp3
 
         private void BINGO_Load(object sender, EventArgs e)
         {
+            //windowsの設定
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.WindowState = FormWindowState.Maximized;
         }
-
+        //再起動ボタン
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Restart();
         }
-
+        //終了ボタン
         private void button3_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
-
+        //人数カウント
         private void button4_Click(object sender, EventArgs e)
         {
             h++;
@@ -101,21 +99,21 @@ namespace WindowsFormsApp3
             label4.Text = (h.ToString());
             label4.Text += "人";
         }
-
+        //フォントサイズ変更
         private void button6_Click(object sender, EventArgs e)
         {
             label1.Font = new Font(label1.Font.FontFamily, fontsize);
-            label2.Font = new Font(label1.Font.FontFamily, fontsize*52/46);
-            label3.Font = new Font(label1.Font.FontFamily, fontsize*16/46);
-            label4.Font = new Font(label1.Font.FontFamily, fontsize*28/46);
-        }
+            label2.Font = new Font(label1.Font.FontFamily, fontsize * 52 / 46);
+            label3.Font = new Font(label1.Font.FontFamily, fontsize * 16 / 46);
+            label4.Font = new Font(label1.Font.FontFamily, fontsize * 28 / 46);
+        }//FHD
 
         private void button7_Click(object sender, EventArgs e)
         {
-            label1.Font = new Font(label1.Font.FontFamily, fontsize*1280/1920);
-            label2.Font = new Font(label1.Font.FontFamily, fontsize * 52/ 46 *1280/1920);
-            label3.Font = new Font(label1.Font.FontFamily, fontsize * 16/ 46 *1280/1920);
-            label4.Font = new Font(label1.Font.FontFamily, fontsize * 28/ 46 *1280/1920);
-        }
+            label1.Font = new Font(label1.Font.FontFamily, fontsize * 1280 / 1920);
+            label2.Font = new Font(label1.Font.FontFamily, fontsize * 52 / 46 * 1280 / 1920);
+            label3.Font = new Font(label1.Font.FontFamily, fontsize * 16 / 46 * 1280 / 1920);
+            label4.Font = new Font(label1.Font.FontFamily, fontsize * 28 / 46 * 1280 / 1920);
+        }//HD
     }
 }
