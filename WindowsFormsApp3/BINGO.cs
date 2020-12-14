@@ -71,8 +71,7 @@ namespace WindowsFormsApp3
 
         private void BINGO_Load(object sender, EventArgs e)
         {
-            //windowsの設定
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            //windowの設定
             this.WindowState = FormWindowState.Maximized;
         }
         //再起動ボタン
