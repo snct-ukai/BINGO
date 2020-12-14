@@ -75,7 +75,7 @@ namespace WindowsFormsApp3
         private void BINGO_Load(object sender, EventArgs e)
         {
             this.TopMost = true;
-            this.FormBorderStyle = FormBorderStyle.None;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.WindowState = FormWindowState.Maximized;
         }
 
