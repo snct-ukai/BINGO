@@ -16,7 +16,7 @@ namespace WindowsFormsApp3
         //フォントサイズ
         const int fontsize = 46;
 
-        Random rnd = new System.Random();
+        Random rnd = new Random();
         //bingoの最大値
         const int bingo = 75;
         //生成された乱数を格納する配列の宣言
@@ -35,7 +35,7 @@ namespace WindowsFormsApp3
             {
                 label4.Text = "0人";
             }
-            //75個目の乱数を表示し終わったあとクリックされたときメモリエラーを防ぐため強制終了させる
+            //bingo個目の乱数を表示し終わったあとクリックされたときメモリエラーを防ぐため強制終了させる
             if (i > (bingo - 1))
             {
                 Environment.Exit(0);
@@ -60,19 +60,15 @@ namespace WindowsFormsApp3
             } while (n);
             //配列のi番目に生成した乱数を入れる
             s[i] = num;
-            label1.Text += (s[i].ToString());
-            label1.Text += "    ";
+            label1.Text += s[i].ToString() + "   ";
             i++;
-            label2.Text = (i.ToString());
-            label2.Text += "個目";
-            label3.Text = "残り";
-            label3.Text += ((bingo - i).ToString())+"個";
+            label2.Text = i.ToString() + "個目";
+            label3.Text = "残り" + (bingo - i).ToString() + "個";
         }
 
         private void BINGO_Load(object sender, EventArgs e)
         {
             //windowsの設定
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.WindowState = FormWindowState.Maximized;
         }
         //再起動ボタン
@@ -89,15 +85,13 @@ namespace WindowsFormsApp3
         private void button4_Click(object sender, EventArgs e)
         {
             h++;
-            label4.Text = (h.ToString());
-            label4.Text += "人";
+            label4.Text = h.ToString() + "人";
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             h--;
-            label4.Text = (h.ToString());
-            label4.Text += "人";
+            label4.Text = h.ToString() + "人";
         }
         //フォントサイズ変更
         private void button6_Click(object sender, EventArgs e)
