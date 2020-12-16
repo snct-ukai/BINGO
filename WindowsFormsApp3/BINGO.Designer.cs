@@ -58,11 +58,11 @@
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-B", 46F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(60, 59);
+            this.label1.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-B", 36F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(60, 282);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(938, 556);
+            this.label1.Size = new System.Drawing.Size(938, 333);
             this.label1.TabIndex = 1;
             this.label1.Text = " ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,7 +72,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-B", 52F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(347, 91);
+            this.label2.Location = new System.Drawing.Point(347, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(364, 67);
             this.label2.TabIndex = 2;
@@ -168,12 +168,12 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-B", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(406, 236);
+            this.label5.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-B", 58F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(454, 128);
+            this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(243, 170);
+            this.label5.Size = new System.Drawing.Size(146, 70);
             this.label5.TabIndex = 11;
-            this.label5.Text = "label5";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BINGO
@@ -181,7 +181,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 675);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -193,6 +192,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BINGO";
             this.Text = "番号ガラガラ";
