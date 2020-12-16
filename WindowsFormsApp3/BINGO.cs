@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 
 namespace WindowsFormsApp3
 {
@@ -29,7 +30,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             if (i == 0)
             {
@@ -42,6 +43,10 @@ namespace WindowsFormsApp3
             }
             int num = 0;
             bool n;
+            int m = i + 1;
+            label2.Text = m.ToString() + "個目";
+            label3.Text = "残り" + (bingo - m).ToString() + "個";
+            label5.Visible = true;
             do
             {
                 //1からconst int bingoの値までの乱数を生成
@@ -60,10 +65,19 @@ namespace WindowsFormsApp3
             } while (n);
             //配列のi番目に生成した乱数を入れる
             s[i] = num;
+            
+            int t = rnd.Next(200, 500);
+            for(int k = t; i > 100; k--)
+            {
+                label5.Text = rnd.Next(1, bingo).ToString();
+                await Task.Delay(10);
+            }
+            label5.Text = s[i].ToString();
+            await Task.Delay(2000);
+            label5.Visible = false;
             label1.Text += s[i].ToString() + "   ";
             i++;
-            label2.Text = i.ToString() + "個目";
-            label3.Text = "残り" + (bingo - i).ToString() + "個";
+            
         }
 
         private void BINGO_Load(object sender, EventArgs e)
