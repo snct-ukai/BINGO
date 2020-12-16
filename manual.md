@@ -28,7 +28,7 @@ BINGO.csの16行目、const int bingoの値を変えることにより最大値�
 フォントサイズもconst int fontsizeを変更することで変更可能、その際全ての文字が連動して変更される。
 
 
-Copyright 2020 Ukai All Rights Reserved.
+
 
 
 
@@ -37,3 +37,17 @@ Copyright 2020 Ukai All Rights Reserved.
 2020/12/16:挙動とUIを若干変更
 
 2020/12/11:FHDモードとHDモードを追加
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright 2020 Ukai All Rights Reserved.
