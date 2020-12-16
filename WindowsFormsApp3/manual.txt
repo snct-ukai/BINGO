@@ -29,4 +29,5 @@ https://github.com/snct-ukai/WindowsFormsApp3
 Copyright 2020 Ukai All Rights Reserved. 
 
 
+2020/12/16:挙動とかUIを若干変更
 2020/12/11:FHDモードとHDモードを追加
